@@ -48,7 +48,7 @@ app.post('/chat', async (req, res) => {
         'anthropic-version': '2023-06-01'
       },
       body: JSON.stringify({
-        model: 'claude-3-5-sonnet',
+        model: 'claude-3-haiku',
         max_tokens: 150,
         system: systemPrompt,
         messages: cleanMessages
