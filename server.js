@@ -76,6 +76,6 @@ app.post('/chat', async (req, res) => {
 });
 
 // Start server
-app.listen(PORT, () => {
-  console.log(`Chat backend running on port ${PORT}`);
+app.listen(PORT, '0.0.0.0', () => {
+  console.log(`Chat backend running on port ${PORT} (all interfaces)`);
 });
